@@ -1,0 +1,179 @@
+
+
+body {
+	height: 20000px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	height: 100vh;
+	background-color: #fff; 
+	background-size: cover;
+	background-position: center;
+	display:flex;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://siterost.net/uploads/temp/72eb491e043d6b9e0af1334b3de1f002.jpg);
+
+}
+
+header {
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8%;
+	box-shadow: 0 5px 10px #000;
+	margin-bottom: 400px;
+
+}
+
+header .logo {
+	font-size: 20px;
+	font-weight: 900;
+	color: #000;
+	transition: 0.5s;
+}
+
+header .logo:hover {
+	transform: scale(1.2);
+}
+
+
+header nav ul li {
+	position: relative;
+	float: left;
+}
+
+header nav ul li a {
+	padding: 15px;
+	color: #000;
+	font-size: 16px;
+	display: block;
+
+
+}
+
+header nav ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+
+
+nav ul li ul {
+	position: absolute;
+	left: 0;
+	width: 180px;
+	background:#fff;
+	display: none;
+}
+
+nav ul li ul li{ 
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.1);
+ }
+
+ nav ul li ul li ul {
+ 	left: 180px;
+ 	top: 0;
+ }
+
+nav ul li:hover > ul {
+	display: initial;
+
+}
+
+.cont {
+	width: 50%;
+	margin: 200px auto 0;
+	color: #fff;
+}
+
+.cont h1 {
+	margin-bottom: 30px;
+	font-size: 60px;
+}
+.cont p {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+
+#col {
+	color: #03fce3;
+}
+
+.social {
+	height: 60px;
+	width: 60px;
+	background: #fff;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+}
+
+.icons {
+	color: #000;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px auto;
+	transition: .5s;
+}
+
+.icon-text {
+	color: #000;
+	min-width: 0px;
+	height: 100%;
+	background: #029bfa;
+	margin-right: 5px;
+	line-height: 0;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px 0 0 5px;
+	overflow: hidden;
+}
+
+.icon {
+	min-width: 50px;
+	height: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.icon .fa-brands  {
+	margin-left: 11px;
+	font-size: 30px;
+	color: #029bfa;
+	line-height: 50px;
+
+}
+
+.icons:hover .icon {
+	background: #029bfa;
+}
+
+.icons:hover .icon .fa-brands {
+	color: #fff;
+}
+
+.icons:hover .icon-text {
+	min-width: 140px;
+}
