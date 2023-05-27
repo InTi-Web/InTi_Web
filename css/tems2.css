@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	height: 100vh;
+	background-color: #fff; 
+	background-size: cover;
+	background-position: center;
+	display:flex;
+    background: #fff;
+}
+
+header {
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8%;
+	box-shadow: 0 5px 10px #000;
+	margin-bottom: 400px;
+
+}
+
+header .logo {
+	font-size: 20px;
+	font-weight: 900;
+	color: #000;
+	transition: 0.5s;
+}
+
+header .logo:hover {
+	transform: scale(1.2);
+}
+
+
+header nav ul li {
+	position: relative;
+	float: left;
+}
+
+header nav ul li a {
+	padding: 15px;
+	color: #000;
+	font-size: 16px;
+	display: block;
+
+
+}
+
+header nav ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+
+
+nav ul li ul {
+	position: absolute;
+	left: 0;
+	width: 180px;
+	background:#fff;
+	display: none;
+}
+
+nav ul li ul li{ 
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.1);
+ }
+
+ nav ul li ul li ul {
+ 	left: 180px;
+ 	top: 0;
+ }
+
+nav ul li:hover > ul {
+	display: initial;
+
+}
+
+.cont {
+	height: 1300px;
+	background-size: cover;
+	width: 100px;
+	background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618933882_15-phonoteka_org-p-pattern-dlya-fona-saita-16.png);
+}
+
+
+.re   {
+	height: 1300px;
+	background-size: cover;
+	width: 100px;
+	margin-left: auto;
+	background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618933882_15-phonoteka_org-p-pattern-dlya-fona-saita-16.png);
+}
+
+.l    {
+	padding-top: 10%;
+	position: absolute;
+	left: 130px;
+	top: 0px;
+	width: 730px;
+	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#h1     {
+	padding-top: 5%;
+	position: absolute;
+	left: 240px;
+	font-weight: bolder;
+
+}
+#liro  {
+	width: 350px;
+	height: auto;
+}
+.sasa {
+	width: 350px;
+	height: auto;
+
+}
+.saslo {
+	width: 350px;
+	height: auto;
+}
